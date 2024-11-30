@@ -1,0 +1,93 @@
+.hero {
+    height: 100%;
+    width: 80%;
+   margin: auto;
+  
+   border-radius: 20px;
+   opacity: 0;
+    margin-top: 10%;
+    transition: opacity 2s ease-in-out;
+   transition-duration: 1s;
+   
+   transition-property: all;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;
+
+}
+.hero.loaded {
+    opacity: 1;
+   
+}
+
+.heroText {
+    z-index: 100;
+    text-align: center;
+    max-width: 1000px;   
+    padding: 20px;     
+}
+
+.heroText h2 {
+    font-size: 3rem;  
+    margin-bottom: 20px;
+}
+
+.heroText p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.ctaBtn {
+    padding: 10px 20px;
+    background-color: #4588f4;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+ .ctaBtn:hover {
+    background-color: rgb(2, 90, 230);
+}
+
+.nav-links .login:hover{
+    background-color: rgb(2, 90, 230);
+}
+
+   
+
+
+
+.container {
+    position: relative;
+    width: 200px; /* Adjust as necessary */
+    height: 200px; /* Adjust as necessary */
+  }
+  
+  .planet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+  }
+  
+  .planet-1 {
+    opacity: 1; /* Make the first image visible initially */
+  }
+  
+  .planet-2 {
+    opacity: 0; /* Initially hide the second image */
+  }
+  
+  /* Add a class to trigger the appearance transition */
+  .container.showsuitcase .planet-1 {
+    opacity: 0; /* Hide the first image */
+  }
+  
+  .container.showsuitcase .planet-2 {
+    opacity: 1; /* Show the second image */
+  }
+  

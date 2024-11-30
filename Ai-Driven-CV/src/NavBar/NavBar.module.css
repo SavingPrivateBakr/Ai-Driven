@@ -1,0 +1,61 @@
+/* NavBar.module.css */
+
+
+
+.navbar {
+    font-family: "Comic Neue";
+    background-color: rgba(255, 255, 255, 0.68); /* #ffffffae */
+    display: flex;
+    justify-content: space-between; /* Space between the items */
+    align-items: center; /* Align items vertically */
+    border-radius: 25px;
+    box-sizing: border-box;
+    width: 100%; /* Take up full width */
+    max-width: 1300px; /* Set max width */
+    height: 50px; /* Fixed height */
+    position: fixed; /* Fixed at the top */
+    top: 3%; /* Sticks to the top */
+    left: 50%; /* Aligns it to the center */
+    transform: translateX(-50%); /* Offsets the element by half of its own width to center it */
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+  
+}
+.logo h1 {
+    color: #000000;
+    margin-left: 10px;
+}
+
+.login {
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #4588f4;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.signing {
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signing li {
+    margin-left: 20px;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+}
+
+.navLinks li {
+    margin-left: 20px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
