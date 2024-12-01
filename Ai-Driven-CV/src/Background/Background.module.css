@@ -1,0 +1,23 @@
+.body {
+    font-family: "Space Grotesk", "Comic Neue", cursive, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    background: 
+      url('/footer-bg.png'), 
+      linear-gradient(to left, #d6e4ff, #f1f6ff);
+    background-repeat: no-repeat;
+    background-size: cover;  /* Ensures the background image covers the entire screen */
+    background-position: center;
+  
+   
+    /* Ensure the body's content does not overflow */
+    overflow: hidden; 
+  }
+  
+  /* Optional: If you want to set html to fill the full viewport as well */
+
+  

@@ -4,12 +4,17 @@ import './index.css'
 import App from './App.jsx'
 import Stars  from './Stars/Stars.jsx'
 import NavBar from './NavBar/NavBar.jsx'
+import Background from './Background/Background.jsx'
+import DecisionBackground from './Background/DecisionBackground.jsx'
 
 createRoot(document.getElementById('root')).render(
   
-  <>
-    <NavBar />
-    <Stars />
+  <StrictMode>
+     <NavBar />
+    
+    
     <App />
-  </>
+   
+   
+  </StrictMode>
 )

@@ -1,0 +1,94 @@
+
+.wholeDecision {
+    font-family: 'Comic Neue', sans-serif;
+    margin-top: 10%;
+    padding: 0;
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: auto; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    
+    text-align: center; /* Center text inside .wholeDecision */
+}
+
+/* Decision panels container will be laid out in a row */
+.decisionPanels {
+    display: flex; /* Set as flexbox */
+    justify-content: center; /* Center the panels horizontally */
+    align-items: center; /* Center the panels vertically */
+    gap: 20px; /* Space between panels */
+    padding: 20px;
+}
+
+/* Each panel occupies one row in the grid */
+.panel {
+    height: 600px;
+    width: 600px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Styling for images to make them smaller */
+.panel img {
+    width: 60%;  /* Adjust the size of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and heading */
+}
+
+/* Panel-right and panel-left styling */
+.panelRight, .panelLeft {
+    background: radial-gradient(circle at center, #e6f0ffa2, #e4f9ff5c, #bae3ea9f);
+    transition-duration: 0.5s;
+}
+
+.panelLeft:hover, .panelRight:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* Panel heading */
+.panel h2 {
+  
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Panel description text */
+.panel p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Style for the paragraph with class 'paragraphText' */
+.paragraphText {
+    font-size: 20px;         /* Set the font size */
+    color: #333;             /* Set the text color */
+    margin-top: 20px;        /* Add space above the paragraph */
+    padding: 10px;           /* Add padding around the paragraph */
+    background-color: #f0f0f000; /* Optional: Add a background color */
+    border-radius: 8px;      /* Optional: Add rounded corners */
+    text-align: center;      /* Ensure the text is centered */
+    max-width: 80%;          /* Limit the width of the paragraph */
+    margin-left: auto;       /* Center it horizontally */
+    margin-right: auto;      /* Center it horizontally */
+    opacity: 0;              /* Initially hide the paragraph */
+    transition: opacity 1s ease; /* Fade-in effect */
+}
+
+/* Show paragraph when the 'visible' class is added */
+.paragraphText.visible {
+    opacity: 1; /* Make the paragraph visible */
+}

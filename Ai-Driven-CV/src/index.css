@@ -1,17 +1,3 @@
-body {
-  
- 
-  font-family: "Space Grotesk","Comic Neue", cursive, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: radial-gradient(circle at center, #e6f0ffa2, #86e3ff5c,#86d9ff9f);
-}
-
-* {
-
-
-  box-sizing: border-box;
-}
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

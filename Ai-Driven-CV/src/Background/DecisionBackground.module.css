@@ -1,0 +1,23 @@
+.body {
+    font-family: "Space Grotesk", "Comic Neue", cursive, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Set background image and gradient */
+    background: 
+        url('/pro-table-top.png'), 
+        linear-gradient(to left, #ffffff, #3a96ff,#42a4ff);
+
+    /* Ensure the background image covers the entire page */
+  
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    background-position: left top;  /* Position the background at the top-left corner */
+
+   
+ 
+    
+    /* Ensure the body's content does not overflow */
+    overflow: hidden;
+}
